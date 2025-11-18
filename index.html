@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lafaba Sales Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'light-bg-main': '#f5f5f7',
+              'light-text-main': '#111827',
+              'light-text-subtle': '#6b7280',
+              'light-border-subtle': 'rgba(148, 163, 184, 0.4)',
+              'light-card-bg': 'rgba(255,255,255,0.9)',
+              'light-accent': '#4f46e5',
+              'light-accent-soft': 'rgba(79,70,229,0.12)',
+              'dark-bg-main': '#020617',
+              'dark-text-main': '#e5e7eb',
+              'dark-text-subtle': '#9ca3af',
+              'dark-border-subtle': 'rgba(148, 163, 184, 0.45)',
+              'dark-card-bg': 'rgba(15, 23, 42, 0.88)',
+              'dark-accent': '#6366f1',
+              'dark-accent-soft': 'rgba(99,102,241,0.16)',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+<style>
+    /* Custom Scrollbar Styling */
+    ::-webkit-scrollbar {
+        width: 12px;
+        height: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+    }
+
+    /* Light Theme */
+    html:not(.dark) ::-webkit-scrollbar-track {
+        background: #f1f5f9; /* slate-100 */
+    }
+    html:not(.dark) ::-webkit-scrollbar-thumb {
+        background-color: #94a3b8; /* slate-400 */
+    }
+    html:not(.dark) ::-webkit-scrollbar-thumb:hover {
+        background-color: #64748b; /* slate-500 */
+    }
+
+    /* Dark Theme */
+    html.dark ::-webkit-scrollbar-track {
+        background: #0f172a; /* slate-900 */
+    }
+    html.dark ::-webkit-scrollbar-thumb {
+        background-color: #475569; /* slate-600 */
+    }
+    html.dark ::-webkit-scrollbar-thumb:hover {
+        background-color: #64748b; /* slate-500 */
+    }
+</style>
+</head>
+  <body class="bg-light-bg-main dark:bg-dark-bg-main text-light-text-main dark:text-dark-text-main transition-colors duration-300">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
